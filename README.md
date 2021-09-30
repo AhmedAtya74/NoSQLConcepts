@@ -31,13 +31,13 @@ Key must be unique and not good option to have long keys because they will use m
 - very simple
   - key-value tuple
   - Not defined schema
-  - Basic operations such as Put, Get and Delete
+  - Basic operations such as ```` Put````, ```` Get ```` and ```` Delete ````
 
 - very flexible
   - Allow changes in data type such as ```` User12 = 0111, User12 = "Giza" ````
   - Add additional attributes such as ```` User12 = {"lang": "en:US"}, User12 = {"lang": "en:US", "Color": "green"} ````
 - Information stored in memory 
-  - ast read & write
+  - Fast read & write
 - Scalability
   - Sharding => distributes different parts of the data accross multiple servers
 
