@@ -124,7 +124,7 @@ The value of "address" key is another document, notice that is related informati
 - Horizontal scalability
 
 
-## limitations of document databases
+## Limitations of document databases
 - More responsibity
   - Care about data in the application code
   - Care about redundant data
