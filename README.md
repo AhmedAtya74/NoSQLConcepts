@@ -132,4 +132,69 @@ The value of "address" key is another document, notice that is related informati
 
 The most popular document databases is **"Mogno DB"**
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+## Column family database
+- Derive from **Google BigTable**
+- Store data in **column family**
+    - Group related data together
+- Also called **wide column databases** 
+- Great when dealing with large volumes of data
+
+
+## Structure 
+- ![image](https://user-images.githubusercontent.com/64374947/135715654-7a8eb3c5-abcf-46b8-a69e-ff6d1c503fee.png)
+- Row key: unique identifiers
+- Each row can have differant number of columns
+
+
+## Designing 
+- Think about the queries
+- No joins
+  - Add all the column we need
+
+
+## Advantages of Column family databases
+- Flexibility
+  - Rows within a column family can have **different columns**
+  - Add new **columns** to a row if we need
+  - **Avoid** filling with default value
+
+- Speed
+  - Related columns are **stored together on disk** 
+  - **Very fast** writing / retriving
+
+- Scalability
+  - Scale horizontally
+
+- Large volumes of data
+  - Designed to **handle large volums of data*
+
+
+
+## Limitation of Column family databases
+- Atomic read / write **but no multirow transactions**
+  - if you want to update in the same transaction a row that belongs to one column and then another row that belongs to another column family.
+
+- No joins
+- No subqueries
+- Need to **define the queries quite well before modeling**
+  - Query changes => modeling changes
+
+
+
+## Suitable cases for Column family databases
+
+- Large volumes of data
+- Extreme write speeds
+
+
+## Unsuitable cases for Column family databases
+- Complex queries and joins
+- Not deeling with large amounts of data
+
+
+
+
 
