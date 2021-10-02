@@ -194,6 +194,68 @@ The most popular document databases is **"Mogno DB"**
 - Complex queries and joins
 - Not deeling with large amounts of data
 
+**Cassandra is one of the popular column-family databases**
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+## Graph database
+- Treat **data** and its **relationships** with the same importance
+- based on graph theory
+
+
+## Graph concepts
+- Vertices / Nodes
+- Edges / Links / arcs
+
+
+## Node
+- Represent **entities** such as users
+- Have properties such as name, surname, email
+
+## Edges
+- Connect the nodes
+- Define relationships between the nodes such as user1 **follows** user12
+- Have properties such as  user1 follows user12 **since 2014** 
+
+
+## Type of Edges
+- Directed
+  - Specific direction such as user1 ==> user12
+
+- Undirected 
+  - No direction it's means the relationships is mutual such as   user1 <==> user12
+
+## Queries
+- Traversing the graph such as get all the users that Ben follows 
+- Path: Set of nodes and edges across a graph
+- Query language: Cypher, Gremlin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
